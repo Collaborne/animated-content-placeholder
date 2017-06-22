@@ -3,6 +3,10 @@ animated-content-placeholder [![Bower version](https://badge.fury.io/bo/animated
 
 Animated placeholder used while loading elements on the page. This element is built for [Polymer](https://www.polymer-project.org).
 
+This element is based on the [deconstruction of the Facebook placeholders](http://cloudcannon.com/deconstructions/2014/11/15/facebook-content-placeholder-deconstruction.html) by George Phillips.
+
+It provides a basic animation on the background, and the possibility of overlaying it with maskers to create the illusion of a loading element on the page.
+
 To use the element:
 
 `bower install animated-content-placeholder`
@@ -19,7 +23,10 @@ To use the element:
 -->
 
 ```html
-<animated-content-placeholder></animated-content-placeholder>
+<animated-content-placeholder>
+	<div class="background-masker header-left"></div>
+	<div class="background-masker header-right"></div>
+</animated-content-placeholder>
 ```
 
 ## License
