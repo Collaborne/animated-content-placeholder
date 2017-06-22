@@ -7,7 +7,10 @@ Inspired by the content placeholder used by e.g. Slack, Facebook.
 ### Example
 
 ```html
-<animated-content-placeholder></animated-content-placeholder>
+<animated-content-placeholder>
+	<div class="background-masker header-left"></div>
+	<div class="background-masker header-right"></div>
+</animated-content-placeholder>
 ```
 
 @demo demo/index.html
@@ -22,8 +25,7 @@ Inspired by the content placeholder used by e.g. Slack, Facebook.
 
 			.item {
 				background: #fff;
-				min-height: 48px;
-				padding: 20px 16px;
+				min-height: var(--animation-height);
 			}
 
 			@keyframes placeHolderShimmer{
@@ -36,6 +38,7 @@ Inspired by the content placeholder used by e.g. Slack, Facebook.
 			}
 
 			.animated-background {
+				height: var(--animation-height);
 				animation-duration: 1s;
 				animation-fill-mode: forwards;
 				animation-iteration-count: infinite;
@@ -44,66 +47,13 @@ Inspired by the content placeholder used by e.g. Slack, Facebook.
 				background: #f6f7f8;
 				background: linear-gradient(to right, #eeeeee 8%, #dddddd 18%, #eeeeee 33%);
 				background-size: 800px 100px;
-				height: 48px;
 				position: relative;
-			}
-
-			.background-masker {
-				background: #fff;
-				position: absolute;
-			}
-
-			.background-masker.header-top {
-				top: 0;
-				left: 48px;
-				right: 0;
-				height: 4px;
-			}
-
-			.background-masker.header-left {
-				top: 4px;
-				left: 48px;
-				height: 16px;
-				width: 8px;
-			}
-
-			.background-masker.header-bottom {
-				top: 20px;
-				left: 48px;
-				right: 0;
-				height: 10px;
-			}
-
-			.background-masker.subheader-left {
-				top: 30px;
-				left: 48px;
-				height: 12px;
-				width: 8px;
-			}
-
-			.background-masker.subheader-right {
-				top: 30px;
-				left: 200px;
-				right: 0;
-				height: 12px;
-			}
-
-			.background-masker.subheader-bottom {
-				top: 42px;
-				left: 48px;
-				right: 0;
-				height: 8px;
 			}
 		</style>
 
 		<div class="item">
 			<div class="animated-background">
-				<div class="background-masker header-top"></div>
-				<div class="background-masker header-left"></div>
-				<div class="background-masker header-bottom"></div>
-				<div class="background-masker subheader-left"></div>
-				<div class="background-masker subheader-right"></div>
-				<div class="background-masker subheader-bottom"></div>
+				<slot></slot>
 			</div>
 		</div>
 
