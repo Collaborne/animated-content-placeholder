@@ -7,6 +7,17 @@ To use the element:
 
 `bower install animated-content-placeholder`
 
+<!--
+```
+<custom-element-demo>
+  <template>
+    <link rel="import" href="animated-content-placeholder.html">
+    <next-code-block></next-code-block>
+  </template>
+</custom-element-demo>
+```
+-->
+
 ```html
 <animated-content-placeholder></animated-content-placeholder>
 ```
