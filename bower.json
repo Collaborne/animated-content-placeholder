@@ -20,10 +20,9 @@
 		"polymer": "Polymer/polymer#^2.0.0"
 	},
 	"devDependencies": {
-			"iron-component-page": "PolymerElements/iron-component-page#^2.0.0",
-			"iron-demo-helpers": "PolymerElements/iron-demo-helpers#^2.0.0",
-			"web-component-tester": "*",
-			"webcomponentsjs": "webcomponents/webcomponentsjs#^1.0.0"
+		"iron-demo-helpers": "PolymerElements/iron-demo-helpers#^2.0.0",
+		"web-component-tester": "*",
+		"webcomponentsjs": "webcomponents/webcomponentsjs#^1.0.0"
 	},
 	"resolutions": {
 		"polymer": "^2.0.0"
