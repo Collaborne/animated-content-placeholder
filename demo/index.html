@@ -14,15 +14,153 @@
 
 	<custom-style>
 		<style is="custom-style" include="demo-pages-shared-styles">
+			.horizontal-placeholder {
+				--animation-height: 48px;
+			}
+
+			.horizontal-placeholder > .background-masker {
+				background: #fff;
+				position: absolute;
+			}
+
+			.horizontal-placeholder > .background-masker.header-top {
+				top: 0;
+				left: 48px;
+				right: 0;
+				height: 4px;
+			}
+
+			.horizontal-placeholder > .background-masker.header-left {
+				top: 4px;
+				left: 48px;
+				height: 16px;
+				width: 8px;
+			}
+
+			.horizontal-placeholder > .background-masker.header-bottom {
+				top: 20px;
+				left: 48px;
+				right: 0;
+				height: 10px;
+			}
+
+			.horizontal-placeholder > .background-masker.subheader-left {
+				top: 30px;
+				left: 48px;
+				height: 12px;
+				width: 8px;
+			}
+
+			.horizontal-placeholder > .background-masker.subheader-right {
+				top: 30px;
+				left: 200px;
+				right: 0;
+				height: 12px;
+			}
+
+			.horizontal-placeholder > .background-masker.subheader-bottom {
+				top: 42px;
+				left: 48px;
+				right: 0;
+				height: 8px;
+			}
+
+			.vertical-placeholder {
+				--animation-height: 100px;
+			}
+
+			.vertical-placeholder > .background-masker {
+				background: #fff;
+				position: absolute;
+			}
+
+			.vertical-placeholder > .background-masker.image-left {
+				top: 0;
+				left: 0;
+				height: 50px;
+				width: 40%;
+			}
+
+			.vertical-placeholder > .background-masker.image-right {
+				top: 0;
+				right: 0;
+				height: 50px;
+				width: 40%;
+			}
+
+			.vertical-placeholder > .background-masker.image-bottom {
+				top: 50px;
+				right: 0;
+				left: 0;
+				height: 8px;
+			}
+
+			.vertical-placeholder > .background-masker.header-left {
+				top: 58px;
+				left: 0;
+				height: 20px;
+				width: 20%;
+			}
+
+			.vertical-placeholder > .background-masker.header-right {
+				top: 58px;
+				right: 0;
+				height: 20px;
+				width: 20%;
+			}
+
+			.vertical-placeholder > .background-masker.header-bottom {
+				top: 78px;
+				right: 0;
+				left: 0;
+				height: 8px;
+			}
+
+			.vertical-placeholder > .background-masker.subheader-left {
+				top: 86px;
+				left: 0;
+				height: 20px;
+				width: 30%;
+			}
+
+			.vertical-placeholder > .background-masker.subheader-right {
+				top: 86px;
+				right: 0;
+				height: 20px;
+				width: 30%;
+			}
 		</style>
 	</custom-style>
 	</head>
 	<body>
 	<div class="vertical-section-container centered">
-		<h3>Basic animated-content-placeholder demo</h3>
+		<h3>animated-content-placeholder demo</h3>
 		<demo-snippet>
 		<template>
-			<animated-content-placeholder></animated-content-placeholder>
+			<animated-content-placeholder class="horizontal-placeholder">
+				<div class="background-masker header-top"></div>
+				<div class="background-masker header-left"></div>
+				<div class="background-masker header-bottom"></div>
+				<div class="background-masker subheader-left"></div>
+				<div class="background-masker subheader-right"></div>
+				<div class="background-masker subheader-bottom"></div>
+			</animated-content-placeholder>
+		</template>
+		</demo-snippet>
+
+		<demo-snippet>
+		<template>
+			<animated-content-placeholder class="vertical-placeholder">
+				<div class="background-masker image-left"></div>
+				<div class="background-masker image-right"></div>
+				<div class="background-masker image-bottom"></div>
+				<div class="background-masker header-left"></div>
+				<div class="background-masker header-right"></div>
+				<div class="background-masker header-bottom"></div>
+				<div class="background-masker subheader-left"></div>
+				<div class="background-masker subheader-right"></div>
+				<div class="background-masker subheader-bottom"></div>
+			</animated-content-placeholder>
 		</template>
 		</demo-snippet>
 	</div>
