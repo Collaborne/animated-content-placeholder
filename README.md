@@ -29,6 +29,12 @@ To use the element:
 </animated-content-placeholder>
 ```
 
+### Styling
+The following custom properties and mixins are available for styling:
+Custom property | Description | Default
+----------------|-------------|----------
+`--animation-height` | Height of the animated background |
+
 ## License
 
     This software is licensed under the Apache 2 license, quoted below.
