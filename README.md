@@ -31,8 +31,9 @@ To use the element:
 
 ### Styling
 The following custom properties and mixins are available for styling:
+
 Custom property | Description | Default
-----------------|-------------|----------
+--------------- | ----------- | ---------
 `--animation-height` | Height of the animated background |
 
 ## License
