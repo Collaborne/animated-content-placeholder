@@ -24,8 +24,8 @@ To use the element:
 
 ```html
 <animated-content-placeholder>
-	<div class="background-masker header-left"></div>
-	<div class="background-masker header-right"></div>
+  <div class="background-masker header-left"></div>
+  <div class="background-masker header-right"></div>
 </animated-content-placeholder>
 ```
 
