@@ -8,8 +8,8 @@ Inspired by the content placeholder used by e.g. Slack, Facebook.
 
 ```html
 <animated-content-placeholder>
-	<div class="background-masker header-left"></div>
-	<div class="background-masker header-right"></div>
+     <div class="background-masker header-left"></div>
+     <div class="background-masker header-right"></div>
 </animated-content-placeholder>
 ```
 
@@ -43,15 +43,23 @@ Custom property | Description | Default
 				}
 			}
 
+			 :host {
+				--animation-duration: 1s;
+				--background-color: #f6f7f8;
+				--background-color-gradient: linear-gradient(to right, #eeeeee 8%, #dddddd 18%, #eeeeee 33%);
+				--top-distance: 0px;
+			}
+
 			.animated-background {
+				top: var(--top-distance);
 				height: var(--animation-height);
-				animation-duration: 1s;
+				animation-duration: var(--animation-duration);
 				animation-fill-mode: forwards;
 				animation-iteration-count: infinite;
 				animation-name: placeHolderShimmer;
 				animation-timing-function: linear;
-				background: #f6f7f8;
-				background: linear-gradient(to right, #eeeeee 8%, #dddddd 18%, #eeeeee 33%);
+				background: var(--background-color);
+				background: var(--background-color-gradient);
 				background-size: 800px 100px;
 				position: relative;
 			}
