@@ -17,48 +17,48 @@ To use the element:
   <template>
     <link rel="import" href="animated-content-placeholder.html">
     <custom-style>
-			<style is="custom-style">
-        .horizontal-placeholder > .background-masker {
+      <style is="custom-style">
+        .background-masker {
           background: #fff;
           position: absolute;
         }
 
-        .horizontal-placeholder > .background-masker.header-top {
+        .background-masker.header-top {
           top: 0;
           left: 48px;
           right: 0;
           height: 4px;
         }
 
-        .horizontal-placeholder > .background-masker.header-left {
+        .background-masker.header-left {
           top: 4px;
           left: 48px;
           height: 16px;
           width: 8px;
         }
 
-        .horizontal-placeholder > .background-masker.header-bottom {
+        .background-masker.header-bottom {
           top: 20px;
           left: 48px;
           right: 0;
           height: 10px;
         }
 
-        .horizontal-placeholder > .background-masker.subheader-left {
+        .background-masker.subheader-left {
           top: 30px;
           left: 48px;
           height: 12px;
           width: 8px;
         }
 
-        .horizontal-placeholder > .background-masker.subheader-right {
+        .background-masker.subheader-right {
           top: 30px;
           left: 200px;
           right: 0;
           height: 12px;
         }
 
-        .horizontal-placeholder > .background-masker.subheader-bottom {
+        .background-masker.subheader-bottom {
           top: 42px;
           left: 48px;
           right: 0;
@@ -74,8 +74,12 @@ To use the element:
 
 ```html
 <animated-content-placeholder>
+<div class="background-masker header-top"></div>
   <div class="background-masker header-left"></div>
-  <div class="background-masker header-right"></div>
+  <div class="background-masker header-bottom"></div>
+  <div class="background-masker subheader-left"></div>
+  <div class="background-masker subheader-right"></div>
+  <div class="background-masker subheader-bottom"></div>
 </animated-content-placeholder>
 ```
 
