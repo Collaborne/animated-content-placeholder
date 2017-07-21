@@ -18,6 +18,61 @@
 					--animation-height: 48px;
 				}
 
+				.horizontal-placeholder-no-animation {
+					--animation-height: 48px;
+					--item-color: #eeeeee;
+					--animation-duration: 0s;
+					--background-color: lightGray;
+					--background-color-gradient: lightGray;
+				}
+
+				.horizontal-placeholder-no-animation > .background-masker {
+					background: #fff;
+					position: absolute;
+				}
+
+				.horizontal-placeholder-no-animation > .background-masker.header-top {
+					top: 0;
+					left: 48px;
+					right: 0;
+					height: 4px;
+				}
+
+				.horizontal-placeholder-no-animation > .background-masker.header-left {
+					top: 4px;
+					left: 48px;
+					height: 16px;
+					width: 8px;
+				}
+
+				.horizontal-placeholder-no-animation > .background-masker.header-bottom {
+					top: 20px;
+					left: 48px;
+					right: 0;
+					height: 10px;
+				}
+
+				.horizontal-placeholder-no-animation > .background-masker.subheader-left {
+					top: 30px;
+					left: 48px;
+					height: 12px;
+					width: 8px;
+				}
+
+				.horizontal-placeholder-no-animation > .background-masker.subheader-right {
+					top: 30px;
+					left: 200px;
+					right: 0;
+					height: 12px;
+				}
+
+				.horizontal-placeholder-no-animation > .background-masker.subheader-bottom {
+					top: 42px;
+					left: 48px;
+					right: 0;
+					height: 8px;
+				}
+
 				.horizontal-placeholder > .background-masker {
 					background: #fff;
 					position: absolute;
@@ -138,6 +193,19 @@
 			<demo-snippet>
 				<template>
 					<animated-content-placeholder class="horizontal-placeholder">
+						<div class="background-masker header-top"></div>
+						<div class="background-masker header-left"></div>
+						<div class="background-masker header-bottom"></div>
+						<div class="background-masker subheader-left"></div>
+						<div class="background-masker subheader-right"></div>
+						<div class="background-masker subheader-bottom"></div>
+					</animated-content-placeholder>
+				</template>
+			</demo-snippet>
+
+			<demo-snippet>
+				<template>
+					<animated-content-placeholder class="horizontal-placeholder-no-animation">
 						<div class="background-masker header-top"></div>
 						<div class="background-masker header-left"></div>
 						<div class="background-masker header-bottom"></div>
