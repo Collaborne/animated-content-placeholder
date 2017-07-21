@@ -34,7 +34,7 @@ Custom property               | Description                                     
 
 			.item {
 				background: var(--item-background);
-				min-height: var(--animation-height);
+				min-height: var(--animation-height, 48px);
 			}
 
 			@keyframes placeHolderShimmer{
@@ -43,7 +43,7 @@ Custom property               | Description                                     
 			}
 			.animated-background {
 				top: var(--top-distance, 0);
-				height: var(--animation-height);
+				height: var(--animation-height, 48px);
 				animation-duration: var(--animation-duration, 1s);
 				animation-fill-mode: forwards;
 				animation-iteration-count: infinite;
