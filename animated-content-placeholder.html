@@ -42,24 +42,16 @@ Custom property | Description | Default
 					background-position: 468px 0
 				}
 			}
-
-			 :host {
-				--animation-duration: 1s;
-				--background-color: #f6f7f8;
-				--background-color-gradient: linear-gradient(to right, #eeeeee 8%, #dddddd 18%, #eeeeee 33%);
-				--top-distance: 0px;
-			}
-
 			.animated-background {
-				top: var(--top-distance);
+				top: var(--top-distance, 0);
 				height: var(--animation-height);
-				animation-duration: var(--animation-duration);
+				animation-duration: var(--animation-duration, 1s);
 				animation-fill-mode: forwards;
 				animation-iteration-count: infinite;
 				animation-name: placeHolderShimmer;
 				animation-timing-function: linear;
-				background: var(--background-color);
-				background: var(--background-color-gradient);
+				background: var(--background-color, #f6f7f8);
+				background: var(--background-color-gradient, linear-gradient(to right, #eeeeee 8%, #dddddd 18%, #eeeeee 33%));
 				background-size: 800px 100px;
 				position: relative;
 			}

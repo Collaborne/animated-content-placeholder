@@ -72,6 +72,8 @@
 
 				.vertical-placeholder {
 					--animation-height: 100px;
+					--animation-duration: 3s;
+					--top-distance: 10px;
 				}
 
 				.vertical-placeholder > .background-masker {
@@ -141,8 +143,8 @@
 					--animation-height: 48px;
 					--item-color: #eeeeee;
 					--animation-duration: 0s;
-					--background-color: lightGray;
-					--background-color-gradient: lightGray;
+					--background-color: lightpink;
+					--background-color-gradient: lightpink;
 				}
 
 				.horizontal-placeholder-no-animation > .background-masker {
@@ -210,7 +212,7 @@
 				</template>
 			</demo-snippet>
 
-			<h3>Vertical placeholder</h3>
+			<h3>Vertical placeholder (slower animation)</h3>
 			<demo-snippet>
 				<template>
 					<animated-content-placeholder class="vertical-placeholder">
@@ -227,7 +229,7 @@
 				</template>
 			</demo-snippet>
 
-			<h3>Non-animated placeholder</h3>
+			<h3>Non-animated placeholder (with custom color)</h3>
 			<demo-snippet>
 				<template>
 					<animated-content-placeholder class="horizontal-placeholder-no-animation">
