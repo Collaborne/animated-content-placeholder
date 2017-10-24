@@ -1,0 +1,21 @@
+dist: trusty
+sudo: false
+group: beta
+
+language: node_js
+node_js:
+- node
+addons:
+  firefox: latest-esr
+cache:
+  directories:
+  - node_modules
+  - "$HOME/.cache/bower"
+before_install:
+- "if [ -d node_modules ] && [ x$(cat node_modules/.last-node-version 2>/dev/null) != x$(node -e 'console.log(process.version)') ]; then npm rebuild --update-binary && node -e 'console.log(process.version)' > node_modules/.last-node-version; fi"
+before_script:
+- npm install web-component-tester bower polymer-cli
+- $(npm bin)/bower install
+- $(npm bin)/polymer lint --rules polymer-2
+script:
+- echo "No tests configured"

@@ -1,5 +1,4 @@
-animated-content-placeholder [![Bower version](https://badge.fury.io/bo/animated-content-placeholder.svg)](http://badge.fury.io/bo/animated-content-placeholder) [![Travis state](https://travis-ci.org/Collaborne/animated-content-placeholder.svg?branch=master)](https://travis-ci.org/Collaborne/animated-content-placeholder) [![Published on webcomponents.org](https://img.shields.io/badge/webcomponents.org-published-blue.svg)](https://www.webcomponents.org/element/Collaborne/animated-content-placeholder)
-=========
+# animated-content-placeholder [![Bower version](https://badge.fury.io/bo/animated-content-placeholder.svg)](http://badge.fury.io/bo/animated-content-placeholder) [![Travis state](https://travis-ci.org/Collaborne/animated-content-placeholder.svg?branch=master)](https://travis-ci.org/Collaborne/animated-content-placeholder) [![Published on webcomponents.org](https://img.shields.io/badge/webcomponents.org-published-blue.svg)](https://www.webcomponents.org/element/Collaborne/animated-content-placeholder)
 
 Animated placeholder used while loading elements on the page. This element is built for [Polymer](https://www.polymer-project.org).
 
