@@ -1,5 +1,8 @@
 # animated-content-placeholder [![Bower version](https://badge.fury.io/bo/animated-content-placeholder.svg)](http://badge.fury.io/bo/animated-content-placeholder) [![Travis state](https://travis-ci.org/Collaborne/animated-content-placeholder.svg?branch=master)](https://travis-ci.org/Collaborne/animated-content-placeholder) [![Published on webcomponents.org](https://img.shields.io/badge/webcomponents.org-published-blue.svg)](https://www.webcomponents.org/element/Collaborne/animated-content-placeholder)
 
+[![Published on Vaadin  Directory](https://img.shields.io/badge/Vaadin%20Directory-published-00b4f0.svg)](https://vaadin.com/directory/component/Collaborneanimated-content-placeholder)
+[![Stars on vaadin.com/directory](https://img.shields.io/vaadin-directory/star/Collaborneanimated-content-placeholder.svg)](https://vaadin.com/directory/component/Collaborneanimated-content-placeholder)
+
 Animated placeholder used while loading elements on the page. This element is built for [Polymer](https://www.polymer-project.org).
 
 This element is based on the [deconstruction of the Facebook placeholders](http://cloudcannon.com/deconstructions/2014/11/15/facebook-content-placeholder-deconstruction.html) by George Phillips.
